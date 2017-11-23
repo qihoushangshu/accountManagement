@@ -18,7 +18,7 @@ public class RegisterController {
 	@RequestMapping(value="/register") 
     public String register() {  
 		logger.info("RegisterController ........................start");
-        return "register";  
+        return "register";
           
     }  
 }
