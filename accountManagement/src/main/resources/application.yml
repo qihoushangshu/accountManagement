@@ -5,5 +5,5 @@ spring:
     encoding.force: true    
   mvc: 
     view: 
-      prefix: /WEB-INF/jsp/ 
+      prefix: /jsp/ 
       suffix: .jsp   
