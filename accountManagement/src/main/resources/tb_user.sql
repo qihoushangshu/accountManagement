@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  ÎÄ¼þÒÑ´´½¨ - ÐÇÆÚÁù-Ê®Ò»ÔÂ-25-2017   
+--  ï¿½Ä¼ï¿½ï¿½Ñ´ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-Ê®Ò»ï¿½ï¿½-25-2017   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table TB_USER
@@ -20,16 +20,16 @@
 
    COMMENT ON COLUMN "C##SCOTT"."TB_USER"."ID" IS 'id
 ';
-   COMMENT ON COLUMN "C##SCOTT"."TB_USER"."ACCOUNT" IS 'ÕË»§
+   COMMENT ON COLUMN "C##SCOTT"."TB_USER"."ACCOUNT" IS 'ï¿½Ë»ï¿½
 ';
-   COMMENT ON COLUMN "C##SCOTT"."TB_USER"."PASSWORD" IS 'ÃÜÂë
+   COMMENT ON COLUMN "C##SCOTT"."TB_USER"."PASSWORD" IS 'ï¿½ï¿½ï¿½ï¿½
 ';
-   COMMENT ON COLUMN "C##SCOTT"."TB_USER"."EMAIL" IS 'ÓÊÏä
+   COMMENT ON COLUMN "C##SCOTT"."TB_USER"."EMAIL" IS 'ï¿½ï¿½ï¿½ï¿½
 ';
 REM INSERTING into C##SCOTT.TB_USER
 SET DEFINE OFF;
-Insert into C##SCOTT.TB_USER (ID,ACCOUNT,PASSWORD,EMAIL) values (2002,'542307299','123456','sixd163@163.com');
-Insert into C##SCOTT.TB_USER (ID,ACCOUNT,PASSWORD,EMAIL) values (2001,'740114958','abcd1234','sixiaodong168@gmail.com');
+Insert into C##SCOTT.TB_USER (ID,ACCOUNT,PASSWORD,EMAIL) values (2002,'542307211','123456','xxx@163.com');
+Insert into C##SCOTT.TB_USER (ID,ACCOUNT,PASSWORD,EMAIL) values (2001,'222222222','12345','aaa@gmail.com');
 --------------------------------------------------------
 --  DDL for Index TB_USER_PK
 --------------------------------------------------------
