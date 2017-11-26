@@ -85,16 +85,16 @@
             </div>
           </div> -->
 
-          <h2 class="sub-header">Section title</h2>
+          <h2 class="sub-header">查询  数据</h2>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
+                  <th>#ID</th>
+                  <th>日期</th>
+                  <th>花销1</th>
+                  <th>花销2</th>
+                  <th>花销3</th>
                 </tr>
               </thead>
               <tbody>
