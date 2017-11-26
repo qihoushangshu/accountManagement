@@ -16,19 +16,20 @@
   <body>
     <script src="bootstrap-3.3.7/dist/js/jquery-1.8.0.min.js"></script>
     <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
      <div class="container">
-      <form class="form-signin">
+      <form class="form-signin" id="form_login">
         <h3 class="form-signin-heading">登录&nbsp;<a href="register" >注册一个账号</a></h3>
-        <label for="inputEmail" class="sr-only">账 号</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="账 号" required autofocus><br>
+        <label for="account" class="sr-only">账 号</label>
+        <input type="text" id="account" name="account" class="form-control" placeholder="账 号" required autofocus><br>
         <label for="inputPassword" class="sr-only">密 码</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="密 码" required>
+        <input type="password" id="password" name="password" class="form-control" placeholder="密 码" required>
         <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me"> 记住我
           </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">登 录</button>
+        <button class="btn btn-lg btn-primary btn-block" id="login"  type="submit">登 录</button>
       </form>
     </div> <!-- /container -->
     <script src="bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
