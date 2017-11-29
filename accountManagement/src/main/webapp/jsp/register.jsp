@@ -10,11 +10,11 @@
 	<link href="bootstrap-3.3.7/dist/css/register.css" rel="stylesheet">
   </head>
   <body>
-    <script src="bootstrap-3.3.7/dist/js/jquery-1.8.0.min.js"></script>
+    <script src="bootstrap-3.3.7/dist/js/jquery-3.1.1.min.js"></script>
     <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
     <script src="js/register.js"></script>
      <div class="container">
-  <form class="form-register" id="form_register">
+  <form class="form-register" id="form_register" method="post">
         <h3 class="form-register-heading">注  册</h3>
         <div class="form-group">
         <label for="account" class="sr-only">账 号</label>

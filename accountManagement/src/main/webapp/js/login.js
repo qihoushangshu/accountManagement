@@ -4,6 +4,7 @@ $(document).ready(function(){
       var account = $('#account').val();
       var password=$('#password').val();
       $('#form_login').attr('action', 'getUser');  
+      //$('#form_login').attr('method', 'post');
       $( '#form_login').submit();
     });
 });

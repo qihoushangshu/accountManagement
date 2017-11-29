@@ -14,11 +14,11 @@
     <script src="bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js"></script>
   </head>
   <body>
-    <script src="bootstrap-3.3.7/dist/js/jquery-1.8.0.min.js"></script>
+    <script src="bootstrap-3.3.7/dist/js/jquery-3.1.1.min.js"></script>
     <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
     <script src="js/login.js"></script>
      <div class="container">
-      <form class="form-signin" id="form_login">
+      <form class="form-signin" id="form_login" method="post">
         <h3 class="form-signin-heading">登录&nbsp;<a href="register" >注册一个账号</a></h3>
         <label for="account" class="sr-only">账 号</label>
         <input type="text" id="account" name="account" class="form-control" placeholder="账 号" required autofocus><br>

@@ -13,6 +13,7 @@
     <link href="bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="bootstrap-3.3.7/dist/css/dashboard.css" rel="stylesheet">
     <script src="bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js"></script>
+    
   </head>
 
   <body>
@@ -29,7 +30,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">退出</a></li>
+            <li><a href="/logout">退出</a></li>
             <li><a href="#">设置</a></li>
             <li><a href="#">个人信息</a></li>
             <li><a href="#">帮助</a></li>
@@ -44,7 +45,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
+          <ul class="nav nav-sidebar" id="ulmenu">
             <li class="active"><a href="#">查询数据 <span class="sr-only">(current)</span></a></li>
             <li><a href="#">添加数据</a></li>
             <li><a href="#">修改数据</a></li>
@@ -216,7 +217,7 @@
         </div>
       </div>
     </div>
-    <script src="bootstrap-3.3.7/dist/js/jquery-1.8.0.min.js"></script>
+    <script src="bootstrap-3.3.7/dist/js/jquery-3.1.1.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <script>window.jQuery || document.write('<script src="/bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
@@ -224,5 +225,6 @@
     <script src="/bootstrap-3.3.7/docs/assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+ 	<script src="/js/util.js"></script>
   </body>
 </html>

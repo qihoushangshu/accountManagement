@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import accountManagement.Mapper.UserMapper;
 import accountManagement.dto.User;
+import accountManagement.util.StringUtil;
 
 /**
  * @author SIXIAODONG
@@ -39,8 +40,9 @@ public class RegisterController {
 		String account = request.getParameter("account");
 		String password = request.getParameter("password");
 		String email = request.getParameter("email");
+		String newPassword = StringUtil.MD5Encode(password);
 		u.setAccount(account);
-		u.setPassword(password);
+		u.setPassword(newPassword);
 		u.setEmail(email);
 		userMapper.saveUser(u);
         return "login";
