@@ -8,7 +8,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import accountManagement.Mapper.UserMapper;
 import accountManagement.dto.User;
@@ -44,7 +43,7 @@ public class LoginController {
 			retUser = userMapper.getUser(u);
 			password = StringUtil.MD5Encode(password);
 			if(retUser != null && password.equals(retUser.getPassword())) {
-				session.setAttribute("account", account);//将用户信息存入session中
+				session.setAttribute("user", retUser);//将用户信息存入session中
 				return "index";  
 			}
 			

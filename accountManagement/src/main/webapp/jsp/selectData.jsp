@@ -1,4 +1,5 @@
- <div class="table-responsive">
+﻿<h2 class="sub-header">查询  数据</h2>
+          <div class="table-responsive">
             <table class="table table-striped">
               <thead>
                 <tr>
