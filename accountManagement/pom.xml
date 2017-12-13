@@ -33,18 +33,18 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 			<!-- 消除spring-boot-starter-web自带的log spring-boot-starter-logging -->
 			<exclusions>
-	        <exclusion> 
-	            <groupId>org.springframework.boot</groupId>
-	            <artifactId>spring-boot-starter-logging</artifactId>
-	        </exclusion>
-   		    </exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-log4j -->
 		<!-- log4j -->
 		<dependency>
-		    <groupId>org.springframework.boot</groupId>
-		    <artifactId>spring-boot-starter-log4j</artifactId>
-		    <version>1.3.8.RELEASE</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-log4j</artifactId>
+			<version>1.3.8.RELEASE</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter -->
 		<!-- springboot ＋ mybatis jar -->
@@ -69,13 +69,18 @@
 			<artifactId>tomcat-embed-jasper</artifactId>
 			<scope>provided</scope>
 		</dependency>
-		<!-- 解决java.lang.ClassNotFoundException: com.sun.el.ExpressionFactoryImpl --> 
-		<dependency> 
-		 <groupId>org.glassfish.web</groupId> 
-		 <artifactId>el-impl</artifactId> 
-		 <version>2.2</version> 
-		</dependency> 
-		
+		<!-- 解决java.lang.ClassNotFoundException: com.sun.el.ExpressionFactoryImpl -->
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>el-impl</artifactId>
+			<version>2.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
 	</dependencies>
-	 
+
 </project>

@@ -3,14 +3,21 @@
  */
 package accountManagement.Controller;
 
+import java.io.IOException;
+
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import accountManagement.Mapper.AccountMapper;
 import accountManagement.Mapper.UserMapper;
@@ -30,8 +37,10 @@ public class ManagementController {
 	
 	
 	
-	@RequestMapping(value="/saveData") 
-    public String saveData(HttpServletRequest request,HttpSession session) {
+	@SuppressWarnings("unchecked")
+	@RequestMapping(value="/saveData", method = {RequestMethod.POST }) 
+	@ResponseBody
+    public void  saveData(HttpServletRequest request, HttpServletResponse response,HttpSession session) throws IOException {
 		logger.info("ManagementController.........................saveData");
 		String clothes = request.getParameter("clothes");
 		logger.info("clothes    :"+clothes);
@@ -60,7 +69,11 @@ public class ManagementController {
 		accountDto.setUserid(user.getId());
 		accountMapper.saveAccount(accountDto);
 		logger.info("savedata ok    :");
-        return "index";  
+		JSONObject returnObj = new JSONObject();
+		returnObj.put("status", "1");
+		response.getWriter().print(returnObj.toString());
+		response.getWriter().flush();
+        //return "success";  
           
     }  
 }
